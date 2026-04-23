@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import healthRoutes from './routes/healthRoutes.js';
 import { errorHandler } from './middlewares/errorHandler.js';
 import authRoutes from './routes/authRoutes.js';
+import reportRoutes from './routes/reportRoutes.js';
 
 const app = express();
 
@@ -26,6 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 // Base URL for health checks
 app.use('/api/health', healthRoutes);
 app.use('/api/auth', authRoutes);
+app.use('/api/reports', reportRoutes);
 
 // --- 404 Fallback Handler ---
 app.use((req, res, next) => {
