@@ -1,0 +1,18 @@
+Cloud Name : dqnswxoe4 
+API Key : 358326624535628 
+API secret : S2mxBPxgodH_EvsggNPGNcsMmiw 
+
+
+______________________
+API GEMINI : 
+
+API Key
+AIzaSyARIk2NsDh1v6v7qpUUy3V_zyBwYjubdpA
+
+Name
+Urban-fix
+Project name
+projects/22695418235
+
+Project number
+22695418235
