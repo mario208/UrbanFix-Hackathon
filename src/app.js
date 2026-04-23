@@ -4,6 +4,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import healthRoutes from './routes/healthRoutes.js';
 import { errorHandler } from './middlewares/errorHandler.js';
+import authRoutes from './routes/authRoutes.js';
 
 const app = express();
 
@@ -24,6 +25,7 @@ if (process.env.NODE_ENV === 'development') {
 // --- Mount Routes ---
 // Base URL for health checks
 app.use('/api/health', healthRoutes);
+app.use('/api/auth', authRoutes);
 
 // --- 404 Fallback Handler ---
 app.use((req, res, next) => {
